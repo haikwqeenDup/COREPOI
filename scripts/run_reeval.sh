@@ -6,9 +6,6 @@ CACHE_ROOT="cache/nyc_kfold"
 CKPT_ROOT="checkpoints/nyc_kfold"
 
 # ====== 论文式 rerank 参数 ======
-ALPHA=0.0   # 关闭原 region-consistency
-BETA=0.0    # 关闭原 category-consistency
-
 TOPK_REGION=500   # 论文：top 40 regions
 TOPM_TIME=5     # 论文：top 5 time periods
 GAMMA=20.0       # rerank bias 强度（建议试 0.5 / 1.0 / 2.0）
